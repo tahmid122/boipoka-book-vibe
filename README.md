@@ -7,7 +7,7 @@ A React Project. This is a practice project of PH web course (Module 46)
 ## 🚀 Live Demo
 
 [Click here to view live website SURGE](https://bookvibe-boipoka-by-tahmid-alam.surge.sh/)
-[Click here to view live website NETLIFY](https://bookvibe-boipoka-by-tahmid-alam.surge.sh/)
+[Click here to view live website NETLIFY](https://bookvibe-boipoka-by-tahmid-alam.netlify.app/)
 
 ## 🛠 Tech Stack
 
