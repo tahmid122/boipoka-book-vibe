@@ -16,18 +16,18 @@ const ReadBook = ({ book }) => {
     tags,
   } = book;
   return (
-    <div className="flex gap-6 my-6 p-6  border border-slate-200 rounded-2xl">
-      <div className="bg-gray-100 py-7 px-12 rounded-2xl w-[230px]">
+    <div className="flex md:flex-row flex-col gap-6 my-6 p-6  border border-slate-200 rounded-2xl">
+      <div className="bg-gray-100 py-7 px-12 rounded-2xl w-full md:w-[230px]">
         <img className="h-[172px] mx-auto" src={image} alt="" />
       </div>
-      <div className="flex flex-col justify-around w-full">
+      <div className="flex flex-col justify-around w-full space-y-2 md:space-y-0">
         <h3 className="text-2xl font-bold">{bookName}</h3>
         <p className="text-base font-medium flex items-center gap-1">
           By: {author}
         </p>
-        <div className="flex items-center gap-3">
+        <div className="flex items-start justify-start gap-3">
           <h4 className="text-base font-bold">Tag</h4>
-          <div className="flex items-center">
+          <div className="flex items-center md:flex-nowrap flex-wrap md:space-y-0 space-y-2">
             {tags.map((tag, index) => (
               <span
                 className="p-1 font-bold rounded px-2 text-xs mr-2 bg-green-100"
@@ -52,7 +52,7 @@ const ReadBook = ({ book }) => {
           </span>
         </div>
         <hr className="border-slate-200" />
-        <div className="text-base flex items-center gap-4">
+        <div className="text-base flex items-center md:flex-nowrap flex-wrap md:gap-4 gap-2">
           <button className="btn btn-primary  rounded-full outline-none border-none">
             Category: {category}
           </button>

@@ -85,16 +85,12 @@ const PagesToRead = () => {
   //   ];
   const data = useLoaderData();
   return (
-    <div className="p-10 bg-gray-50 rounded-2xl m-10">
+    <div className="md:p-10 p-5 bg-gray-50 rounded-2xl m-2 md:m-10">
       <ResponsiveContainer width="100%" height={500}>
         <BarChart
-          width={1000}
-          height={500}
           data={data}
           margin={{
             top: 20,
-            right: 30,
-            left: 20,
             bottom: 5,
           }}
         >

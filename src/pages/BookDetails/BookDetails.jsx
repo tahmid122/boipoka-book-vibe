@@ -23,11 +23,11 @@ const BookDetails = () => {
   } = singleBook;
   return (
     <div className="p-10 ">
-      <div className=" rounded-3xl py-20 flex items-start justify-between p-20 gap-12">
-        <div className="w-[50%] bg-gray-100 rounded-2xl p-16">
-          <img className="h-[560px] mx-auto" src={image} alt="" />
+      <div className=" rounded-3xl md:py-20 flex md:flex-row flex-col items-start justify-between md:p-20 gap-12">
+        <div className="w-full md:w-[50%] bg-gray-100 rounded-2xl p-5 md:p-16">
+          <img className="h-[290px] md:h-[560px] mx-auto" src={image} alt="" />
         </div>
-        <div className="w-[50%] space-y-3">
+        <div className="w-full md:w-[50%] space-y-3">
           <h1 className="font-bold text-4xl">{bookName}</h1>
           <p className="font-medium text-xl">By: {author}</p>
           <hr className="border opacity-60 border-slate-200" />
